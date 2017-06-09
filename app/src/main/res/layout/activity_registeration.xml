@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.rajat.blood_bank.Registeration"
+    android:weightSum="1"
+    android:background="#cc1100"
+    >
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/tool"></include>
+
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Name"
+        android:id="@+id/name" />
+
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Userame"
+        android:id="@+id/username" />
+
+
+    <EditText
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Email"
+        android:id="@+id/email"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:hint="Contact"
+        android:id="@+id/cont"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:id="@+id/address"
+        android:hint="Address"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="password"
+        android:id="@+id/pass"
+        android:layout_gravity="center_horizontal" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="21dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blood Group : "
+            android:textSize="18sp"/>
+        <Spinner
+            android:layout_marginTop="10dp"
+             android:dropDownWidth="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spin"></Spinner>
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="174dp"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:text="Create Account"
+        android:id="@+id/account"
+        android:background="@drawable/shape"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>
+    </LinearLayout>
+</ScrollView>

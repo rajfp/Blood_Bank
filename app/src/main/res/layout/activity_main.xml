@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true">
+    xmlns:android="http://schemas.android.com/apk/res/android" />
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#CC1100"
+    tools:context="com.example.rajat.blood_bank.MainActivity"
+    android:weightSum="1">
+    <include layout="@layout/toolbar"
+        android:id="@+id/tool"></include>
+
+    <TextView
+        android:layout_width="97dp"
+        android:textColor="#C0C0C0"
+        android:typeface="serif"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.04"
+        android:textStyle="normal|bold|italic"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Username"
+        android:id="@+id/name"
+
+        android:layout_weight="0.04" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:id="@+id/passw"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.04" />
+
+    <Button
+        android:layout_width="198dp"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/login"
+        android:background="@drawable/shape"
+        android:layout_gravity="center_horizontal"
+        android:onClick="signIn"
+        android:layout_weight="0.04"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:layout_width="198dp"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:id="@+id/register"
+        android:background="@drawable/shape"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.04" />
+</LinearLayout>
+</ScrollView>
