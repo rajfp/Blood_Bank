@@ -29,10 +29,7 @@ public class Registeration extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registeration);
-        toolbar = (Toolbar) findViewById(R.id.tool);
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("Blood Bank");
-        toolbar.setTitleTextColor(Color.WHITE);
+
         loginDataBaseAdapter = new LoginDataBaseAdapter(this);
         loginDataBaseAdapter = loginDataBaseAdapter.open();
         editTextName= (EditText) findViewById(R.id.name);

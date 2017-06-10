@@ -13,8 +13,7 @@
     android:background="#CC1100"
     tools:context="com.example.rajat.blood_bank.MainActivity"
     android:weightSum="1">
-    <include layout="@layout/toolbar"
-        android:id="@+id/tool"></include>
+    <include layout="@layout/toolbar"></include>
 
     <TextView
         android:layout_width="97dp"

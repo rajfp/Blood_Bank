@@ -4,8 +4,27 @@
     android:layout_height="?attr/actionBarSize"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#000000"
+    android:id="@+id/tool"
     app:titleTextAppearance="@style/ToolbarTitle"
     android:fitsSystemWindows="true"
     app:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/doc"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/logo"
+        android:layout_centerVertical="true"
+        android:cropToPadding="false" />
+    <TextView
+        android:layout_marginLeft="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blood Bank"
+        android:layout_toRightOf="@+id/logo"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:id="@+id/head"/>
 
 </android.support.v7.widget.Toolbar>

@@ -25,11 +25,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        toolbar = (Toolbar) findViewById(R.id.tool);
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("Blood Bank");
-
-        toolbar.setTitleTextColor(Color.WHITE);
 
         loginDataBaseAdapter = new LoginDataBaseAdapter(this);
         loginDataBaseAdapter = loginDataBaseAdapter.open();

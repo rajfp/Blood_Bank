@@ -15,23 +15,21 @@ import android.widget.TextView;
 public class Users extends AppCompatActivity {
 
     private TextView textViewname, textViewpass, tvAddress,tvcontact,tvblood;
-
-    Toolbar toolbar;
     TabLayout tabLayout;
+    Toolbar toolbar;
     ViewPagerAdapter viewPagerAdapter;
     ViewPager viewPager;
     private int[] tabIcons = {
-            R.drawable.se,R.drawable.note};
+            R.drawable.acc,R.drawable.search};
 
     @Override
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_users);
-        toolbar = (Toolbar) findViewById(R.id.tool2);
+        toolbar= (Toolbar) findViewById(R.id.tool2);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
-        toolbar.setTitleTextColor(Color.WHITE);
         tabLayout= (TabLayout) findViewById(R.id.tab);
         tabLayout.setSelectedTabIndicatorColor(Color.parseColor("#3F51B5"));
         tabLayout.setSelectedTabIndicatorHeight((int) (5 * getResources().getDisplayMetrics().density));
@@ -69,8 +67,8 @@ public class Users extends AppCompatActivity {
         }
     }
     private void setupTabIcons() {
-        tabLayout.getTabAt(0).setIcon(tabIcons[1]);
-        tabLayout.getTabAt(1).setIcon(tabIcons[0]);
+        tabLayout.getTabAt(0).setIcon(tabIcons[0]);
+        tabLayout.getTabAt(1).setIcon(tabIcons[1]);
 
     }
 
